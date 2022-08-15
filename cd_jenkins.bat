@@ -19,7 +19,7 @@ call C:"Program Files"\7-Zip\7z.exe a -r latest.7z T:%tFolderName%*
 
 call s:
 call rd /s /q %sFolderName%-new
-call skdir %sFolderName%-new
+call mkdir %sFolderName%-new
 
 call t:
 call xcopy /Y /E latest.7z S:%sFolderName%-new\
